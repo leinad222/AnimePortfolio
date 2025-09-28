@@ -1,0 +1,570 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #add8e6; /* Light blue background */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .icon {
+  height: 50px;
+}
+header .icon{
+  height: 60px;          /* adjust size */
+  width: auto;           /* keep proportions */
+  border-radius: 50%;    /* make it circular */
+  border: 2px solid #f4c542;  /* yellow border */
+  padding: 5px;          /* spacing inside border */
+  background-color: #000; /* optional background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .icon:hover {
+  transform: scale(1.1);  /* zoom effect */
+  box-shadow: 0 0 15px #f4c542; /* glowing effect */
+}
+
+header h1 {
+  color: #f4c542;
+  font-size: 1.5rem;
+}
+
+header .login-btn {
+  background: #f4c542;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .login-btn:hover {
+  background: #e0b030;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #f4c542;             /* yellow text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff;                /* turns white on hover */
+  text-decoration: underline;
+}
+menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+/* Header layout fix */
+header {
+  background: #000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 15px auto;
+  max-width: 500px;
+  display: flex;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* Affiliate Section */
+.affiliate {
+  padding: 20px;
+  background: #111;
+  border-top: 2px solid #f4c542;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.affiliate h2 {
+  color: #f4c542;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Affiliate cards */
+.affiliate-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.affiliate-items a {
+  display: block;
+  width: 200px;
+  background: #1a1a1a;
+  border: 2px solid #f4c542;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.affiliate-items a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  background: #222;
+}
+
+/* Affiliate images */
+.affiliate-items img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.affiliate-items img:hover {
+  transform: scale(1.05);
+}
+
+/* Product title */
+.affiliate-items p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #f4c542;
+}
+
+/* Anime Details */
+.anime-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: #111;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.details-poster {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.details-info {
+  flex: 1;
+}
+
+.details-info h2 {
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+.details-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-info ul li {
+  margin: 5px 0;
+}
+
+.details-info ul li a {
+  color: #f4c542;
+  text-decoration: none;
+}
+
+.details-info ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Watch Page */
+.watch-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.watch-section h2 {
+  margin-bottom: 15px;
+  color: #f4c542;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  color: #222;
+  text-align: center;
+}
+
+h3 + a, 
+h3 + a + a +a{
+  display: inline-block;
+  margin: 0.5rem 0.75rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background: #f5f5f5;
+  color: #0066c0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+h3 + a:hover,
+h3 + a + a:hover {
+  background: #e1f0ff;
+  color: #004080;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* Anime Posters Grid */
+.anime-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.anime-posters img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.anime-posters img:hover {
+  transform: scale(1.05);
+}
+.anime-card {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.anime-card h3 {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #f4c542;
+}
+
+.anime-card:hover h3 {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #f4c542;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: wh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #e0b030
+}
+/* General page styling */
+/* Form container */
+form {
+    background-color: #162447;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form title */
+form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #e43f5a;
+}
+
+/* Input and textarea styling */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #1f305e;
+    color: #f0f0f0;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Input hover/focus effect */
+form input:focus,
+form textarea:focus {
+    background-color: #273c75;
+    outline: none;
+}
+
+/* Textarea specific */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #e43f5a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #ff6b81;
+}
+
+/* Success or error message */
+.message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #1f305e;
+  color: #ffdd59; /* Yellow success text */
+}
+.image-hover {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+/*Media Hover*/
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.image-hover {
+  width: 100%;
+  max-width: 400px; /* Prevents image from getting too large */
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Mobile fallback (hover -> tap) */
+@media (hover: none) {
+  .image-hover:hover {
+    transform: none;
+    filter: none;
+  }
+}
+.image-hover {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Disable hover on touch devices */
+@media (hover: none) {
+  .image-hover:hover {
+    transform: none;
+    filter: none;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  padding: 10px 20px;
+  position: relative; /* needed for absolute navbar dropdown */
+}
+
+.menu-toggle {
+  display: none; /* desktop hidden */
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff69b4;
+}
+
+/* Mobile & tablet */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #222;
+    padding: 10px;
+    position: absolute;
+    top: 60px; /* below header */
+    right: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .navbar {
+    display: none; /* hide by default */
+    flex-direction: column;
+    gap: 10px;
+    background: #222;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar.active {
+    display: flex; /* show when toggled */
+  }
+}
